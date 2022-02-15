@@ -1,3 +1,8 @@
+/*
+Shopper, a simple app.
+Created by Denis Calin in February 2022.
+ */
+
 package com.example.shopper;
 
 import androidx.lifecycle.LiveData;

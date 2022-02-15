@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--    Shopper, a simple app.
+    Created by Denis Calin in February 2022.-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shopper">
 
