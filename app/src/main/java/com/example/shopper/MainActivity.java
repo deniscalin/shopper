@@ -23,10 +23,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.braze.Braze;
-import com.braze.BrazeActivityLifecycleCallbackListener;
-import com.braze.models.outgoing.BrazeProperties;
-import com.braze.support.BrazeLogger;
+
 import com.example.shopper.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
@@ -43,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        registerActivityLifecycleCallbacks(new BrazeActivityLifecycleCallbackListener());
-        BrazeLogger.setLogLevel(Log.VERBOSE);
 
         //Calling createNotificationChannel()
         createNotificationChannel();

@@ -10,7 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://appboy.github.io/appboy-android-sdk/sdk" }
     }
 }
 rootProject.name = "Shopper"
