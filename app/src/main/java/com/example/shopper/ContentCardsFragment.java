@@ -2,7 +2,6 @@
 
 package com.example.shopper;
 
-
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -176,7 +175,7 @@ public class ContentCardsFragment extends Fragment implements SwipeRefreshLayout
             outState.putParcelable(LAYOUT_MANAGER_SAVED_INSTANCE_STATE_KEY, mRecyclerView.getLayoutManager().onSaveInstanceState());
         }
         if (mCardAdapter != null) {
-            outState.putStringArrayList(KNOWN_CARD_IMPRESSIONS_SAVED_INSTANCE_STATE_KEY, (ArrayList<String>) mCardAdapter.getImpressedCardIds());
+            outState.putStringArrayList(KNOWN_CARD_IMPRESSIONS_SAVED_INSTANCE_STATE_KEY, new ArrayList<>(mCardAdapter.getImpressedCardIds()));
         }
         if (mCustomContentCardsViewBindingHandler != null) {
             outState.putParcelable(VIEW_BINDING_HANDLER_SAVED_INSTANCE_STATE_KEY, mCustomContentCardsViewBindingHandler);
