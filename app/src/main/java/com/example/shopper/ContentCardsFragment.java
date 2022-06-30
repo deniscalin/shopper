@@ -113,7 +113,6 @@ public class ContentCardsFragment extends Fragment implements SwipeRefreshLayout
         }
         Braze.getInstance(getContext()).subscribeToContentCardsUpdates(mContentCardsUpdatedSubscriber);
         Braze.getInstance(getContext()).requestContentCardsRefresh(true);
-        Braze.getInstance(getContext()).logContentCardsDisplayed();
 
         Braze.getInstance(getContext()).removeSingleSubscription(mSdkDataWipeEventSubscriber, SdkDataWipeEvent.class);
         if (mSdkDataWipeEventSubscriber == null) {
